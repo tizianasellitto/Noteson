@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link href="all.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="scripts.js"></script>
+    </head>
+    
+    <body>
+        <div class="header">
+            <div id="tabs">
+                <a id="new" class="attivo" onclick="javascript:newTab()">Add</a>
+                <a id="list" onClick="javascript:listTab()">Notes</a>
+            </div>
+        </div>
+        <div id="container">
+            <p id="notification" ></p>
+            <div id="add" >
+                <textarea rows="8" cols="44" id="notes"></textarea>
+                <button  type="submit" onclick="javascript:addNote()">Add note</button>
+            </div>
+            <div id="listNotes">
+            </div>	
+        </div>
+    </body>
+    
+</html>
