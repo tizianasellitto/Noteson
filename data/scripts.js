@@ -4,6 +4,13 @@ addon.port.on("show", function (arg) {
 	clearNotification();
 });
 
+//clear method
+function clearNote(){
+    var textArea = document.getElementById('notes');
+    textArea.value = '';
+    textArea.focus();
+}
+
 //function add note using button
 function addNote() {
 	var textArea = document.getElementById('notes');
