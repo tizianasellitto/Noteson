@@ -9,10 +9,12 @@ function clearNote(){
     var textArea = document.getElementById('notes');
     textArea.value = '';
     textArea.focus();
+    clearNotification();
 }
 
 //function add note using button
 function addNote() {
+
 	var textArea = document.getElementById('notes');
 	if (textArea.value.match(/./g)){
 		text = clearText(textArea.value);
@@ -22,6 +24,7 @@ function addNote() {
 			'value': textArea.value
 		});
 		textArea.value = '';
+        textArea.focus();
 	} else {
 		document.getElementById("notification").innerHTML = "Please enter some text into the note field";
 		textArea.focus();
