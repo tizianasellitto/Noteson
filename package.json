@@ -2,8 +2,8 @@
   "name": "noteson",
   "fullName": "Noteson",
   "id": "jid1-1WhHTJ6Gu65Bnw",
-  "description": "a basic add-on",
-  "author": "",
+  "description": "a basic Firefox extension to insert, modify and delete notes",
+  "author": "Tiziana Sellitto",
   "license": "MPL 2.0",
   "version": "0.1",
   "dependencies": ["toolbar-buttons", "api-utils", "addon-kit"]
