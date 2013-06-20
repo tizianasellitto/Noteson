@@ -54,7 +54,7 @@ function listTabReturn(storage) {
 function newTab(){
 	var newTab = document.getElementById("new");
 	clearNotification();
-	document.getElementById('new').className = "attivo";
+	document.getElementById('new').className = "topcoat-button--large-quiet is-active";
 	document.getElementById('list').className = "";
 	document.getElementById('listNotes').style.zIndex = "-1";
 	document.getElementById('add').style.zIndex = "1";

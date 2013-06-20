@@ -1,26 +1,47 @@
 <html>
     <head>
-        <link href="all.css" rel="stylesheet" type="text/css" media="all" />
-        <script src="scripts.js"></script>
+        <link href="topcoat/css/topcoat-mobile-dark.css" rel="stylesheet" type="text/css" />
     </head>
     
     <body>
-        <div class="header">
+        <div class="topcoat-navigation-bar">
+            <div class="topcoat-navigation-bar__item left center">
+                    <a id="new" class="topcoat-button--large--quiet" onclick="javascript:newTab()">New note</a>
+            </div>
+            <div class="topcoat-navigation-bar__item right center">
+                    <a id="list" class="topcoat-button--large--quiet" onclock="javascript:listTab()">List</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- <div class="header">
             <div id="tabs">
                 <a id="new" class="attivo" onclick="javascript:newTab()">Add</a>
                 <a id="list" onClick="javascript:listTab()">Notes</a>
-            </div>
+            </div> -->
         </div>
         <div id="container">
             <p id="notification" ></p>
             <div id="add" >
-                <textarea rows="8" cols="44" id="notes"></textarea>
-                <button  type="submit" onclick="javascript:addNote()">Add note</button>
-                <button onclick="javascript:clearNote()">Clear</button>
+                <input type="text" id="notes" class="topcoat-text-input--large" placeholder="Your lovely note here" />
+                <div>
+                    <input type="button" class="topcoat-button--cta" onclick="javascript:addNote()" value="Save" />
+                    <input type="button" class="topcoat-button--cta" onclick="javascript:clearNote()" value="Clear" />
+            </div>
+                <!-- <textarea rows="16" cols="44" id="notes" class="topcoat-text-input"></textarea> -->
+                <!-- <button  type="submit" onclick="javascript:addNote()">Add note</button> -->
+                <!-- <button onclick="javascript:clearNote()">Clear</button> -->
             </div>
             <div id="listNotes">
             </div>	
         </div>
     </body>
-    
+    <script src="scripts.js"></script>
 </html>
